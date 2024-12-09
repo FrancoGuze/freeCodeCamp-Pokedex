@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+
+<html lang='es'>
+
+<head>
+  <link rel='stylesheet' href='styles.css'>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<main>
+  <header>
+    <button class='prev' id='prev-btn'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></button>
+<input type="text" placeholder="Search by name or id" id='search-input'>
+<button class='search-btn' id='search-button'>Search</button>
+<button class='next' id='next-btn'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></button>
+
+
+
+</header>
+
+<div id="pokemon-data" class="pokemon-data hidden">
+  <div id="loader" class="loader hide"></div>
+  <div class="upper-data">
+<div class='name-id'>
+<h3 id='pokemon-name'></h3>
+<h3 id='pokemon-id'></h3>
+</div>
+  <div class='weight-height'>
+<h4>Weight: <span id='weight'></span></h4>
+<h4>Height: <span id='height'></span></h4>
+</div></div>
+<div class="img-container">
+<img id="sprite" src=''>
+</div>
+<div class="types" id='types'>Grass Poison</div>
+<table class='stats-box'>
+<tr><td><p>HP</p></td><td id="hp"></td></tr>
+<tr><td><p>ATTACK</p></td><td id="attack"></td></tr>
+<tr><td><p>DEFENSE</p></td><td id="defense"></td></tr>
+<tr><td><p>SP.ATTACK</p></td><td id="special-attack"></td></tr>
+<tr><td><p>SP.DEFENSE</p></td><td id="special-defense"></td></tr>
+<tr><td><p>SPEED</p></td><td id="speed"></td></tr>
+</table>
+</div>
+
+</main>
+</body>
+<script src='script.js'></script>
+
+</html>
